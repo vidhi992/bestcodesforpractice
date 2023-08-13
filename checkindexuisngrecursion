@@ -1,0 +1,44 @@
+package recursion;
+
+import java.util.Scanner;
+
+public class checkIndex {
+	private static int checkIndex(int input[],int x,int index) {
+		if(input[index]==x) {
+			return index ;
+		}
+		if(index==input.length) {
+			return -1;
+		}
+		return checkIndex(input,x,index+1);
+	}
+	public static int checkIndex(int input[],int x) {
+		return checkIndex(input,x,0);
+	}
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter size of an array");
+		int n=sc.nextInt();
+		System.out.println("Enter elements of an array");
+		int input[]=new int[n];
+		 
+		for(int i=0; i<n; i++) {
+			input[i]=sc.nextInt();
+			}
+		System.out.print("Enter the number to search for: ");
+        int x = sc.nextInt();
+		
+	     	for(int i=0; i<n; i++)
+	     	{
+		      System.out.print(input[i]+" ");
+			}
+	     	
+	     	System.out.print("your index is "+checkIndex(input,x));
+	     	
+		
+		
+	}
+
+}
+
