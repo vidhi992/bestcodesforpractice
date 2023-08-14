@@ -1,0 +1,36 @@
+package recursion;
+
+public class checkpalindrome {
+	public static boolean helper(String s) {
+		if(s.length()==0) {
+			return true;
+		}
+		else if (s.length()==1) {
+			return true;
+		}
+		return true;
+	}
+	
+	public static boolean palindrome(String s) {
+		int x= s.charAt(0);
+		int y=(s.charAt(s.length()-1));
+		boolean ans=helper(s);
+	    if(x==y && ans){
+	    return true;
+	    }
+	    else {
+	    	return false;
+	    }
+		
+			  
+		  
+		}
+
+	public static void main(String[] args) {
+	   String s="ninja";
+	   boolean ans1=palindrome(s);
+	   System.out.println(ans1);
+
+	}
+
+}
