@@ -1,0 +1,80 @@
+package recursion;
+
+import java.util.Scanner;
+
+public class checksorted {
+//	public static boolean checksorted(int input[]) {
+//		if(input.length<=1){
+//			return true;
+//		}
+//		int smallinput[]=new int[input.length-1];
+//		for(int i=1; i<input.length; i++) {
+//		smallinput[i-1]=input[i];
+//	}
+//		boolean smallans=checksorted(smallinput);
+//		if(!smallans) {
+//			return false;
+//		} 
+//		if(input[0]<=input[1]) {
+//			return true;
+//		}
+//		else {
+//			return false;
+//		}
+//	}
+	
+	
+	
+	
+	
+//	public static boolean checksorted(int input[]) {
+//		if(input.length<=1)
+//		{ 
+//			return true;
+//		}
+//		if(input[0]>input[1]) {
+//			return false;
+//		}
+//		int smallinput[]=new int[input.length-1];
+//		for(int i=1; i<input.length; i++) {
+//		smallinput[i-1]=input[i];
+//       }
+//		boolean smallAns=checksorted(smallinput);
+//		return smallAns;
+//		
+		//}
+	
+	private static boolean checkSortedBetter(int input[],int startIndex) {
+		if(startIndex>=input.length-1) {
+			return true;
+			
+		}
+		if(input[startIndex]>input[startIndex+1]) {
+			return false;
+		}
+		boolean smallAns=checkSortedBetter(input,startIndex+1);
+		return smallAns;
+	}
+	public static boolean checkSortedBetter(int input[]) {
+		return checkSortedBetter(input,0);
+	}
+	
+
+	public static void main(String[] args) {
+		Scanner s =new Scanner(System.in);
+		System.out.println("enter size of an array");
+		   int x=s.nextInt();
+  	       System.out.println("enter elements of array");
+	      int input[]=new int[x];
+	      for(int i=0; i<x; i++) {
+	      input[i]=s.nextInt();
+		
+	      }
+	      
+	      for(int i=0; i<x; i++) {
+	       System.out.print(input[i]+" ");
+	}
+	      System.out.print(checkSortedBetter(input));
+
+}
+}
