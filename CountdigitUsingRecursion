@@ -1,0 +1,20 @@
+package recursion;
+
+public class numberofdigit {
+ public static int countnumbers(int n) {
+	 if(n==0){
+		 return 0;
+ }
+	
+	int smallans=countnumbers(n/10);
+	 return smallans+1;
+ }
+	public static void main(String[] args) {
+		int n=7689534;
+		int ans =countnumbers(n);
+		System.out.println(ans);
+		
+
+	}
+
+}
