@@ -1,0 +1,23 @@
+package recursion;
+
+public class printnumber {
+	public static void printingnumber(int n) {
+		
+		if(n==0) {
+		 
+			   return ;
+		}
+		  printingnumber(n-1);
+		  
+		  System.out.print(n +" ");
+		
+		
+		}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+         printingnumber(989);
+	}
+
+}
