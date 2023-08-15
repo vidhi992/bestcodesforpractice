@@ -1,0 +1,17 @@
+package recursion;
+
+public class Geometricsum {
+	public static double geometricadd(int n) {
+		if(n==0) {
+			return 1;
+		}
+		return geometricadd(n-1)+ 1/Math.pow(2, n);
+	}
+
+	public static void main(String[] args) {
+    int n=1;
+    double ans=geometricadd(n);
+     System.out.println(ans);
+	}
+
+}
