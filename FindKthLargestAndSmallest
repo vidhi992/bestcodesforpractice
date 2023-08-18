@@ -1,0 +1,20 @@
+package top100practice;
+
+import java.util.*;
+
+public class findKthlargestAndSmallest {
+
+	
+	
+	public static void main(String[] args) {
+		int k[] = {2, 4, 6, 5, 7,10,34,65,78,97,61};
+		int kValue = 3; // Find the 3rd largest element
+		int l=3;
+		Arrays.sort(k);
+		
+		System.out.println(Arrays.toString(k));
+		System.out.println(k[k.length-l]);
+		System.out.println(k[l-1]);
+		
+	}
+}
