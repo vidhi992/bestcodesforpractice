@@ -1,0 +1,31 @@
+package top100practice;
+
+import java.util.Scanner;
+
+public class leapyear {
+
+	public static void main(String[] args) {
+		Scanner s =new Scanner(System.in);
+		 System.out.println("Enter the year");
+	      double n=s.nextDouble();
+	     if(n%400==0 && n%100==0 )
+	     {
+	    	 System.out.print(n+" is leap year");
+	     }
+
+	     if(n%400==0 || n%4==0)
+	     {
+	    	 System.out.print(n+" is leap year");
+	     }
+	  
+	     
+	     else
+	     {
+	    	 System.out.print("is not a leap year");
+	     }
+
+	     
+
+	}
+
+}
