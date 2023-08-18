@@ -1,0 +1,38 @@
+package top100practice;
+
+import java.util.Scanner;
+
+public class Armstrongnumber {
+
+	public static void main(String[] args)
+	{
+		Scanner s =new Scanner(System.in);
+		 System.out.println("number");
+	      int no=s.nextInt();
+	      int l=0;
+	      int k=no;
+	      while(k>0) {
+	    	  k=k/10;
+	    	  l++;
+	      }
+	      
+	      int temp=no;
+	      int res=0;
+	      while(temp>0) {
+	    	  int d=temp%10;
+	    	  res+=Math.pow(d ,l);
+	    	  temp=temp/10;
+	    	 
+	      }
+	     
+	      if(res==no) {
+	    	  System.out.println(no+"is armstrong");
+	      }
+	      else {
+	    	  System.out.print(no + "is not arsmtorng");
+	      }
+	      
+
+	}
+
+}
