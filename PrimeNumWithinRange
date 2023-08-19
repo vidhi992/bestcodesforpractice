@@ -1,0 +1,38 @@
+package top100practice;
+
+import java.util.Scanner;
+
+public class Primenumwithinarange {
+	 public static boolean isPrime(int num) {
+	        if (num <= 1)
+	            return false;
+
+	        for (int i = 2; i <= Math.sqrt(num); i++) {
+	            if (num % i == 0)
+	                return false;
+	        }
+
+	        return true;
+	 }
+
+	public static void main(String[] args)
+	{
+		 Scanner s =new Scanner(System.in);
+	      int n=s.nextInt();
+	      int m=s.nextInt();
+	      int i,j;
+	      for(i=n; i<=m; i++) {
+	    	  if(isPrime(i)==true) {
+	    		  System.out.println(i+"is prime");
+	    	  }
+	    	  if(isPrime(i)==false)
+	    	  {
+	    		  System.out.println(i+"is not prime");
+	    	  }
+	      }
+	     
+	      }
+
+     
+
+}
