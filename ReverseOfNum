@@ -1,0 +1,25 @@
+package top100practice;
+
+import java.util.Scanner;
+
+public class ReverseofNum {
+
+	public static void main(String[] args) {
+		Scanner s =new Scanner(System.in);
+		 System.out.println("number");
+	      int num=s.nextInt();
+	      int rem;
+	      int reverse=0;
+	      int temp=num;
+	      while(temp!=0)
+	      {
+	    	  rem=temp%10;
+	    	  reverse=reverse*10+rem;
+	    	  temp/=10;
+	    	  
+	      }
+	      System.out.print(reverse);
+
+	}
+
+}
