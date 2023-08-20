@@ -1,0 +1,18 @@
+package virujavaapplication;
+
+public class anonymousearray {
+
+	public static void main(String[] args) {
+
+   anonymousearray.mul(new int[] {3,4,5,2,6,});}
+   public static void mul(int[] no) {
+	   int total = 1 ;
+			   for(int i:no) {
+				   total=total*i;
+			   }
+			   System.out.println(total);
+   }
+
+	}
+
+
