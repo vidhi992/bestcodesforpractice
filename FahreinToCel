@@ -1,0 +1,22 @@
+package virujavaapplication;
+import java.util.Scanner;
+public class fahtocel {
+
+	public static void main(String[] args)
+	{
+		int First,Second;                       
+		Scanner sc = new Scanner(System.in);    
+		First = sc.nextInt();                   
+		Second=sc.nextInt();                    
+		if(First<Second ){                     
+		    System.out.println("FIRST");          
+		}                                       
+		else if (Second<First){                
+		    System.out.println("SECOND");       
+		}                                       
+		else{                                   
+		    System.out.println("ANY");          
+	}
+
+	}
+}
