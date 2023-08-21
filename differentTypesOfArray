@@ -1,0 +1,40 @@
+package virujavaapplication;
+
+public class differenttypesofarrya {
+printing 2d array//
+	public static void main(String[] args) {
+		int[][] a={{2,3,4,5},{6,7,8,9}};
+		for(int i=0; i<a.length; i++) {
+			for(int j=0; j<a[i].length; j++) {
+				System.out.print(a[i][j] +" ");
+				
+			}
+			System.out.println("");
+		}
+	}
+	printing 3d array
+	public static void main(String[] args) {
+		int[][][] a={{{2,3,4,5},{6,7,8,9},{4,3,}}};
+		for(int i=0; i<a.length; i++) {
+			for(int j=0; j<a[i].length; j++) {
+				for(int k=0; k<a[i][j].length; k++) {
+					
+				System.out.print(a[i][j][k] +" ");
+				
+			}
+			System.out.println("");
+		}
+	}
+
+}
+	printing 2d array using for each loop
+	public static void main (String []args) {
+		int[][] a= {{2,3,4,5,6},{6,4,6,8,}};
+		for(int ii[]:a) {
+			for(int i:ii) {
+			System.out.print(i+" ");
+		}
+			System.out.println("");
+	}
+}
+}
