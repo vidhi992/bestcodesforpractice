@@ -1,0 +1,31 @@
+package virujavaapplication;
+
+public class Binarysearch {
+	
+
+	public static void main(String[] args) {
+		int [] a= {2,3,4,6,5,7,8,9};
+		int search=9;
+		int li=0;
+		int hi=a.length-1;
+		int mid=(li+hi)/2;
+		for(int i=0; i<a.length; i++) {
+			if(a[mid]==search) {
+				System.out.print("element is at "+mid);
+				break;
+				
+			}else if(a[mid]<search) {
+				li=mid+1;
+			}
+			else {
+				hi=mid-1;
+			}
+			mid=(li+hi)/2;
+		}
+		if(li>hi) {
+			System.out.print("element not found");
+		}
+		
+	}
+
+}
