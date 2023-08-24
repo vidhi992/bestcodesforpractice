@@ -1,0 +1,39 @@
+package virujavaapplication;
+
+import java.util.Scanner;
+
+public class SumOfOddPosition {
+    public static int Sum(int[] input, int i) {
+        if (i >= input.length) {
+            return 0;
+        }
+
+        if (i % 2 == 0) {
+            return input[i] + Sum(input, i + 1);
+        } else {
+           
+            return Sum(input, i + 1);
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of elements:");
+        int n = sc.nextInt();
+
+        System.out.println("Enter the elements of the array:");
+        int input[] = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            input[i] = sc.nextInt();
+        }
+
+        System.out.print("Array elements: ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(input[i] + " ");
+        }
+
+        int result = Sum(input, 0);
+        System.out.println("\nSum of elements at odd positions: " + result);
+    }
+}
