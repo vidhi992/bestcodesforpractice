@@ -1,0 +1,25 @@
+package top100practice;
+
+public class StringPalindrome {
+	public static boolean CheckPalindrome(String s) {
+		if(s.length()==1) {
+			return true;
+			}
+		StringBuilder sb=new StringBuilder(s);
+		StringBuilder reversed=sb.reverse();
+	
+		if( s.equals(reversed.toString())){
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+
+	public static void main(String[] args) {
+		String k="amma";
+		System.out.print(CheckPalindrome(k));
+
+	}
+
+}
