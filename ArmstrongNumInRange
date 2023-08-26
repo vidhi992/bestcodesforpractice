@@ -1,5 +1,3 @@
-package top100practice;
-
 import java.util.Scanner;
 
 public class ArmstrongNumInRange {
