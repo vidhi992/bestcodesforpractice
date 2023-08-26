@@ -1,5 +1,3 @@
-package virujavaapplication;
-
 public class anonymousearray {
 
 	public static void main(String[] args) {
