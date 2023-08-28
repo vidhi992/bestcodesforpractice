@@ -1,5 +1,3 @@
-package virujavaapplication;
-
 public class buublesortinstring {
 
 	public static void main(String[] args) {
