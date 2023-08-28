@@ -1,5 +1,3 @@
-
-
 public class numberofdigit {
  public static int countnumbers(int n) {
 	 if(n==0){
