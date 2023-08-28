@@ -1,5 +1,3 @@
-
-
 public class findingZeroes {
 	public static int countzeroes(int input) {
 		if(input<10) {
