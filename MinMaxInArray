@@ -1,5 +1,4 @@
 package top100practice;
-
 public class MinMaxInArray {
 	public static int max(int[] input) {
 		int max=input [0];
