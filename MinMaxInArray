@@ -5,7 +5,6 @@ public class MinMaxInArray {
 			if(input[i]>max) {
 				max=input[i];
 			}
-		
 		}
 		return max;
 	}
