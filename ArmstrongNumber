@@ -1,3 +1,4 @@
+//armstrong number
 import java.util.Scanner;
 
 public class Armstrongnumber {
